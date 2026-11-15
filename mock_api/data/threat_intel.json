@@ -1,4 +1,4 @@
-﻿{
+{
   "ip": {
     "203.0.113.45": {"reputation": "malicious", "confidence": 95,
                      "tags": ["brute-force", "botnet"], "last_seen": "2026-11-13"}

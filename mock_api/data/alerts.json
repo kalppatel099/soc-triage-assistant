@@ -1,4 +1,4 @@
-﻿[
+[
   {"id": "ALERT-001", "type": "suspicious_login", "source_ip": "203.0.113.45",
    "user": "jdoe", "detail": "Login succeeded after 14 failed attempts",
    "timestamp": "2026-11-14T03:12:00Z"},
