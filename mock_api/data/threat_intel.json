@@ -1,10 +1,22 @@
 {
   "ip": {
     "203.0.113.45": {"reputation": "malicious", "confidence": 95,
-                     "tags": ["brute-force", "botnet"], "last_seen": "2026-11-13"}
+                     "tags": ["brute-force", "botnet"], "last_seen": "2026-11-13"},
+    "203.0.113.99": {"reputation": "malicious", "confidence": 80,
+                     "tags": ["password-spraying", "scanner"], "last_seen": "2026-11-12"},
+    "192.0.2.77":   {"reputation": "malicious", "confidence": 88,
+                     "tags": ["data-exfiltration", "attacker-infrastructure"], "last_seen": "2026-11-10"},
+    "192.0.2.200":  {"reputation": "malicious", "confidence": 92,
+                     "tags": ["c2", "beacon"], "last_seen": "2026-11-14"},
+    "198.51.100.23": {"reputation": "suspicious", "confidence": 70,
+                     "tags": ["port-scanner"], "last_seen": "2026-11-13"}
   },
   "hash": {
     "44d88612fea8a8f36de82e1278abb02f": {"reputation": "malicious", "confidence": 99,
                      "tags": ["trojan"], "family": "FakeStealer"}
+  },
+  "domain": {
+    "secure-payroll-update.example": {"reputation": "malicious", "confidence": 96,
+                     "tags": ["phishing", "credential-harvesting"], "first_seen": "2026-11-13"}
   }
 }

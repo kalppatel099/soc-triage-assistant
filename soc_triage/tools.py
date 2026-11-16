@@ -26,4 +26,10 @@ def lookup_hash(file_hash: str) -> dict:
     return _lookup("hash", file_hash)
 
 
-TOOLS = [lookup_ip, lookup_hash]
+@tool
+def lookup_domain(domain: str) -> dict:
+    """Look up a domain name in the threat intelligence feed."""
+    return _lookup("domain", domain)
+
+
+TOOLS = [lookup_ip, lookup_hash, lookup_domain]

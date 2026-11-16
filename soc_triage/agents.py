@@ -72,7 +72,7 @@ MAX_TOOL_ROUNDS = 5  # safety limit
 ENRICH_PROMPT = """You are a SOC threat-intelligence analyst.
 
 You are given an alert and the indicators (IOCs) found in it. Use the
-available lookup tools to check every IP address and file hash against the
+available lookup tools to check every IP address, file hash, and domain against the
 threat intelligence feed. Do not guess reputations: only report what the
 tools return. If a tool returns "no intel found", say so; that is not proof
 that the indicator is safe.
