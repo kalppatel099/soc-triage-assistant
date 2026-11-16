@@ -7,11 +7,10 @@ load_dotenv()
 MOCK_API_URL = os.getenv("MOCK_API_URL", "http://localhost:8000")
 
 
-def get_llm(temperature: float = 0.0):
+def get_llm():
     """Create the Gemini chat model. Model name comes from .env."""
     return ChatGoogleGenerativeAI(
         model=os.getenv("GEMINI_MODEL", "gemini-3.5-flash-lite"),
-        temperature=temperature,
     )
 
 
